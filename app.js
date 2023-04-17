@@ -38,7 +38,9 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/waiting', waitingRouter);
 app.use('/suggest', suggerstRouter);
-app.use(cors())
+app.use(cors({
+  origin: process.env.URI
+}))
 
 
 // catch 404 and forward to error handler
