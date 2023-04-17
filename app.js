@@ -39,7 +39,7 @@ app.use('/users', usersRouter);
 app.use('/waiting', waitingRouter);
 app.use('/suggest', suggerstRouter);
 app.use(cors({
-  origin: process.env.URI
+  origin: '*'
 }))
 
 
